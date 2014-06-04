@@ -32,7 +32,7 @@ class ubuntuzilla (
   $ubuntuzilla_repos       = $ubuntuzilla::params::ubuntuzilla_repos,
 
 ) inherits ubuntuzilla::params {
-  
+ 
   if $::osfamily == 'Debian' {
     apt::source { 'ubuntuzilla':
       location    => $ubuntuzilla_location,
@@ -43,7 +43,7 @@ class ubuntuzilla (
       include_src => $ubuntuzilla_include_src,
     }
   }
-  
+ 
   else {
     notice ("Your operating system ${::operatingsystem} will not have the Ubuntuzilla repository applied")
   }

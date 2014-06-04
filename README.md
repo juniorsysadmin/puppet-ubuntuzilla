@@ -1,10 +1,9 @@
 ####Table of Contents
 
 1. [Overview](#overview)
-2. [Usage - Configuration options](#usage)
-5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+2. [Usage](#usage)
+3. [Limitations](#limitations)
+4. [Development](#development)
 
 ##Overview
 
@@ -12,11 +11,15 @@ This module installs and enables the Ubuntuzilla deb repository.
 When run on a non-Debian osfamily it exits. 
 
 [![Build
-Status](https://secure.travis-ci.org/juniorsysadmin/juniorsysadmin-puppet-ubuntuzilla.png)](http://travis-ci.org/juniorsysadmin/juniorsysadmin-puppet-ubuntuzilla)
+Status](https://secure.travis-ci.org/juniorsysadmin/puppet-ubuntuzilla.png)](http://travis-ci.org/juniorsysadmin/puppet-ubuntuzilla)
 
 ##Usage
 
-`include  ubuntuzilla` or to use your own Ubuntuzilla mirror:
+```puppet
+include  '::ubuntuzilla'
+```
+
+or to use your own Ubuntuzilla mirror:
 
 ```puppet
 class { '::ubuntuzilla':
