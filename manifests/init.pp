@@ -1,6 +1,7 @@
 # == Class: ubuntuzilla
 #
-# Module to install the Ubuntuzilla repository.
+# Module to install the Ubuntuzilla repository. When run on a non-Debian
+# osfamily it exits with no action performed.
 #
 # === Parameters
 #

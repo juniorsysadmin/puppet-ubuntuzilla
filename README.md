@@ -8,7 +8,7 @@
 ##Overview
 
 This module installs and enables the Ubuntuzilla deb repository.
-When run on a non-Debian osfamily it exits with no action. 
+When run on a non-Debian osfamily it exits with no action performed.
 
 [![Build
 Status](https://secure.travis-ci.org/juniorsysadmin/puppet-ubuntuzilla.png)](http://travis-ci.org/juniorsysadmin/puppet-ubuntuzilla)
