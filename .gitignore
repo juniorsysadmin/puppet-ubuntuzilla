@@ -1,7 +1,8 @@
+.bundle
+*.sw*
+.vagrant
+coverage/
 Gemfile.lock
+pkg/
 spec/fixtures
-pkg
-.rspec_system
-.bundle/
-metadata.json
-.project
+vendor

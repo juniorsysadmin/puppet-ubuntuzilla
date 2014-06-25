@@ -8,7 +8,7 @@
 ##Overview
 
 This module installs and enables the Ubuntuzilla deb repository.
-When run on a non-Debian osfamily it exits. 
+When run on a non-Debian osfamily it exits with no action. 
 
 [![Build
 Status](https://secure.travis-ci.org/juniorsysadmin/puppet-ubuntuzilla.png)](http://travis-ci.org/juniorsysadmin/puppet-ubuntuzilla)
@@ -23,7 +23,7 @@ or to use your own Ubuntuzilla mirror:
 
 ```puppet
 class { '::ubuntuzilla':
-  ubuntuzilla_key => 'A2CG4CE',
+  ubuntuzilla_key => 'A1234567',
   ubuntuzilla_key_server => 'keyserver.server.com',
   ubuntuzilla_location => 'ubuntuzilla.mirror.com',
 }
