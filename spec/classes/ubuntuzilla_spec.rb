@@ -8,14 +8,12 @@ describe 'ubuntuzilla', :type => :class do
   context 'Debian osfamily with no parameters' do
     let(:facts) {{ :lsbdistid => 'debian', :lsbdistcodename => 'wheezy', :osfamily => 'Debian', }}
     it { should contain_class('apt') }
-    it { should contain_apt__source('ubuntuzilla').with(
-    'location'    => 'http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt',
-    'release'     => 'all',
-    'repos'       => 'main',
-    'key'         => 'C1289A29',
-    'key_server'  => 'keyserver.ubuntu.com',
-    'include_src' => false,
-    ) }
+    it { should contain_apt__source('ubuntuzilla').with_location('http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt') }
+    it { should contain_apt__source('ubuntuzilla').with_release('all') }
+    it { should contain_apt__source('ubuntuzilla').with_repos('main') }
+    it { should contain_apt__source('ubuntuzilla').with_key('C1289A29') }
+    it { should contain_apt__source('ubuntuzilla').with_key_server('keyserver.ubuntu.com') }
+    it { should contain_apt__source('ubuntuzilla').with_include_src(false) }
   end
 
   context 'Debian with location set' do
