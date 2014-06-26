@@ -8,4 +8,3 @@ license     	'Apache License, Version 2.0'
 
 dependency  'puppetlabs/apt', '>= 1.0.0'
 project_page 'https://github.com/juniorsysadmin/puppet-ubuntuzilla'
-issues_url 'https://github.com/juniorsysadmin/puppet-ubuntuzilla/issues'
