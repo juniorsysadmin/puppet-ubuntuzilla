@@ -1,0 +1,14 @@
+{
+  "name": "juniorsysadmin-ubuntuzilla",
+  "version": "0.0.3",
+  "author": "Ben Spiccia",
+  "summary": "Module for installing the Ubuntuzilla repository",
+  "license": "Apache License, Version 2.0",
+  "source": "git://github.com/juniorsysadmin/puppet-ubuntuzilla.git",
+  "project_page": "https://github.com/juniorsysadmin/puppet-ubuntuzilla",
+  "issues_url": "https://github.com/juniorsysadmin/puppet-ubuntuzilla/issues",
+  "description": "This module installs the Ubuntuzilla repository which hosts up to date versions of Mozilla Firefox, Thunderbird and Seamonkey.",
+  "dependencies": [
+    {"name":"puppetlabs/apt","version_requirement":">= 1.0.0"}
+  ]
+}

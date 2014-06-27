@@ -1,5 +1,5 @@
 name		'juniorsysadmin-ubuntuzilla'
-version		'0.0.2' 
+version		'0.0.3' 
 source		'git://github.com/juniorsysadmin/puppet-ubuntuzilla.git'
 author		'Ben Spiccia'
 summary		'Module for installing the Ubuntuzilla repository'
