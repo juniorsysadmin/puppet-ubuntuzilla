@@ -24,6 +24,16 @@
 # [*ubuntuzilla_repos*]
 #   Used by apt::source. Defaults to main.
 #
+# === Usage
+#
+# include '::ubuntuzilla'
+#
+# or to use a local mirror:
+#
+#  class { 'ubuntuzilla':
+#    ubuntuzilla_location => 'http://localmirror.server.domain',
+#  }
+#
 class ubuntuzilla (
   $ubuntuzilla_include_src = $ubuntuzilla::params::ubuntuzilla_include_src,
   $ubuntuzilla_key         = $ubuntuzilla::params::ubuntuzilla_key,
@@ -37,12 +47,12 @@ class ubuntuzilla (
   if $::osfamily == 'Debian' {
     include apt
     apt::source { 'ubuntuzilla':
+      include_src => $ubuntuzilla_include_src,
+      key         => $ubuntuzilla_key,
+      key_server  => $ubuntuzilla_key_server,
       location    => $ubuntuzilla_location,
       release     => $ubuntuzilla_release,
       repos       => $ubuntuzilla_repos,
-      key         => $ubuntuzilla_key,
-      key_server  => $ubuntuzilla_key_server,
-      include_src => $ubuntuzilla_include_src,
     }
   }
 
