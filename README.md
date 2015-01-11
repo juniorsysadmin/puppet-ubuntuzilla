@@ -1,11 +1,13 @@
-####Table of Contents
+# ubuntuzilla
+
+#### Table of Contents
 
 1. [Overview](#overview)
-2. [Usage](#usage)
-3. [Limitations](#limitations)
-4. [Development](#development)
+1. [Usage](#usage)
+1. [Limitations](#limitations)
+1. [Development](#development)
 
-##Overview
+## Overview
 
 This module installs and enables the Ubuntuzilla deb repository.
 When run on a non-Debian osfamily it exits with no action performed.
@@ -13,7 +15,7 @@ When run on a non-Debian osfamily it exits with no action performed.
 [![Build
 Status](https://secure.travis-ci.org/juniorsysadmin/puppet-ubuntuzilla.png)](http://travis-ci.org/juniorsysadmin/puppet-ubuntuzilla)
 
-##Usage
+## Usage
 
 ```puppet
 include  '::ubuntuzilla'
@@ -29,36 +31,36 @@ class { '::ubuntuzilla':
 }
 ```
 
-###Parameters
+### Parameters
 
 The following parameters are available in the ubuntuzilla module:
 
-####`ubuntuzilla_include_src`
+#### `ubuntuzilla_include_src`
 
 Used by apt::source. Defaults to false.
 
-####`ubuntuzilla_key`
+#### `ubuntuzilla_key`
 
 Used by apt::source. Defaults to the official Ubuntuzilla one.
 
-####`ubuntuzilla_key_server`
+#### `ubuntuzilla_key_server`
 
 Used by apt::source. Defaults to keyserver.ubuntu.com
 
-####`ubuntuzilla_location`
+#### `ubuntuzilla_location`
 
 Location of Ubuntuzilla repository. Defaults to
 http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt
 
-####`ubuntuzilla_release`
+#### `ubuntuzilla_release`
 
 Used by apt::source. Defaults to all.
 
-####`ubuntuzilla_repos`
+#### `ubuntuzilla_repos`
 
 Used by apt::source. Defaults to main.
 
-##Limitations
+## Limitations
 
 This module has received limited testing on:
 
@@ -67,6 +69,6 @@ This module has received limited testing on:
 
 against Puppet 2.7.x and 3.x
 
-##Development
+## Development
 
 Patches are welcome.

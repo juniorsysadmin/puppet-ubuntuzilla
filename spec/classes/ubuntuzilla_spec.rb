@@ -1,12 +1,10 @@
 require 'spec_helper'
 
 describe 'ubuntuzilla', :type => :class do
-  it { should compile.with_all_deps }
-  it { should create_class('ubuntuzilla') }
-  it { should contain_class('ubuntuzilla::params') }
 
   context 'Debian osfamily with no parameters' do
     let(:facts) {{ :lsbdistid => 'debian', :lsbdistcodename => 'wheezy', :osfamily => 'Debian', }}
+    it { should compile.with_all_deps }
     it { should contain_class('apt') }
     it { should contain_apt__source('ubuntuzilla').with_location('http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt') }
     it { should contain_apt__source('ubuntuzilla').with_release('all') }
