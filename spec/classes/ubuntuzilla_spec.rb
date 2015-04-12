@@ -9,7 +9,7 @@ describe 'ubuntuzilla', :type => :class do
     it { should contain_apt__source('ubuntuzilla').with_location('http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt') }
     it { should contain_apt__source('ubuntuzilla').with_release('all') }
     it { should contain_apt__source('ubuntuzilla').with_repos('main') }
-    it { should contain_apt__source('ubuntuzilla').with_key('C1289A29') }
+    it { should contain_apt__source('ubuntuzilla').with_key('FBC0FA27F5D79B1F60A77837CCC158AFC1289A29') }
     it { should contain_apt__source('ubuntuzilla').with_key_server('keyserver.ubuntu.com') }
     it { should contain_apt__source('ubuntuzilla').with_include_src(false) }
   end

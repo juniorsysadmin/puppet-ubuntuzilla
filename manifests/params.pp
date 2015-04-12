@@ -1,10 +1,6 @@
-# == Class: ubuntuzilla::params
-#
-# Default parameter values for the ubuntuzilla module
-#
 class ubuntuzilla::params {
   $ubuntuzilla_include_src = false
-  $ubuntuzilla_key         = 'C1289A29'
+  $ubuntuzilla_key         = 'FBC0FA27F5D79B1F60A77837CCC158AFC1289A29'
   $ubuntuzilla_key_server  = 'keyserver.ubuntu.com'
   $ubuntuzilla_location    = 'http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt'
   $ubuntuzilla_release     = 'all'
