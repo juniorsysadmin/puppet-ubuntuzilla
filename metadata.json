@@ -1,6 +1,6 @@
 {
   "name": "juniorsysadmin-ubuntuzilla",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Ben Spiccia",
   "summary": "Module for installing the Ubuntuzilla repository",
   "license": "Apache-2.0",
