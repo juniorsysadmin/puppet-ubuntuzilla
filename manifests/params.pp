@@ -1,6 +1,6 @@
 class ubuntuzilla::params {
   $ubuntuzilla_include_src = false
-  $ubuntuzilla_key         = 'FBC0FA27F5D79B1F60A77837CCC158AFC1289A29'
+  $ubuntuzilla_key         = 'C77205F7194A3E1ABE2DF9A4B7B9C16F2667CA5C'
   $ubuntuzilla_key_server  = 'keyserver.ubuntu.com'
   $ubuntuzilla_location    = 'http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt'
   $ubuntuzilla_release     = 'all'
