@@ -1,3 +1,24 @@
+## Future
+
+### Backwards-incompatible changes
+
+- Parameters no longer have the ubuntuzilla prefix.
+
+  `ubuntuzilla_include_src` is now `include_src`
+
+  `ubuntuzilla_key` is now `key`
+
+  `ubuntuzilla_key_server` is now `key_server`
+
+  `ubuntuzilla_location` is now `location`
+
+  `ubuntuzilla_release` is now `release`
+
+  `ubuntuzilla_repos` is now `repos`
+
+- puppetlabs-apt 2.x is now the minimum version required on Debian-based
+  systems
+
 ## 2015-04-12 Release 0.0.5
 
 ### Backwards-incompatible changes:

@@ -25,9 +25,9 @@ or to use your own Ubuntuzilla mirror:
 
 ```puppet
 class { '::ubuntuzilla':
-  ubuntuzilla_key => 'A1234567',
-  ubuntuzilla_key_server => 'keyserver.server.com',
-  ubuntuzilla_location => 'ubuntuzilla.mirror.com',
+  key        => 'A1234567',
+  key_server => 'keyserver.server.com',
+  location   => 'ubuntuzilla.mirror.com',
 }
 ```
 
@@ -35,28 +35,28 @@ class { '::ubuntuzilla':
 
 The following parameters are available in the ubuntuzilla module:
 
-#### `ubuntuzilla_include_src`
+#### `include_src`
 
 Used by apt::source. Defaults to false.
 
-#### `ubuntuzilla_key`
+#### `key`
 
 Used by apt::source. Defaults to the official Ubuntuzilla one.
 
-#### `ubuntuzilla_key_server`
+#### `key_server`
 
 Used by apt::source. Defaults to keyserver.ubuntu.com
 
-#### `ubuntuzilla_location`
+#### `location`
 
 Location of Ubuntuzilla repository. Defaults to
 http://downloads.sourceforge.net/project/ubuntuzilla/mozilla/apt
 
-#### `ubuntuzilla_release`
+#### `release`
 
 Used by apt::source. Defaults to all.
 
-#### `ubuntuzilla_repos`
+#### `repos`
 
 Used by apt::source. Defaults to main.
 

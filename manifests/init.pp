@@ -1,22 +1,26 @@
 class ubuntuzilla (
-  $ubuntuzilla_include_src = $ubuntuzilla::params::ubuntuzilla_include_src,
-  $ubuntuzilla_key         = $ubuntuzilla::params::ubuntuzilla_key,
-  $ubuntuzilla_key_server  = $ubuntuzilla::params::ubuntuzilla_key_server,
-  $ubuntuzilla_location    = $ubuntuzilla::params::ubuntuzilla_location,
-  $ubuntuzilla_release     = $ubuntuzilla::params::ubuntuzilla_release,
-  $ubuntuzilla_repos       = $ubuntuzilla::params::ubuntuzilla_repos,
+  $include_src = $ubuntuzilla::params::include_src,
+  $key         = $ubuntuzilla::params::key,
+  $key_server  = $ubuntuzilla::params::key_server,
+  $location    = $ubuntuzilla::params::location,
+  $release     = $ubuntuzilla::params::release,
+  $repos       = $ubuntuzilla::params::repos,
 
 ) inherits ubuntuzilla::params {
 
   if $::osfamily == 'Debian' {
     include ::apt
     apt::source { 'ubuntuzilla':
-      include_src => $ubuntuzilla_include_src,
-      key         => $ubuntuzilla_key,
-      key_server  => $ubuntuzilla_key_server,
-      location    => $ubuntuzilla_location,
-      release     => $ubuntuzilla_release,
-      repos       => $ubuntuzilla_repos,
+      include  => {
+        'src' => $include_src,
+      },
+      key      => {
+        'id'     => $key,
+        'server' => $key_server,
+      },
+      location => $location,
+      release  => $release,
+      repos    => $repos,
     }
   }
 
