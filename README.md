@@ -67,7 +67,7 @@ This module has received limited testing on:
 * Debian 6/7
 * Ubuntu 10.04/12.04/14.04
 
-against Puppet 2.7.x and 3.x
+against Puppet 3.8.7 and Puppet 4.x
 
 ## Development
 
