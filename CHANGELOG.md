@@ -1,4 +1,4 @@
-## Future
+## 2016-12-18 Release 0.1.0
 
 ### Backwards-incompatible changes
 
